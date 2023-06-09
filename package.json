@@ -1,0 +1,38 @@
+{
+  "name": "qr_code_be",
+  "version": "0.0.1",
+  "description": "the backend of QR Code website.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon --exec npm run babel",
+    "start": "npm run build && node dist/index.js",
+    "build": "babel index.js -d dist",
+    "babel": "babel-node index.js",
+    "format": "prettier --config ./.prettierrc --write ./src/**/*.{js,json}",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "backend",
+    "qr-code",
+    "truongthienloc",
+    "manameunity"
+  ],
+  "author": "truongthienloc",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "5.1.0",
+    "body-parser": "1.20.2",
+    "cors": "2.8.5",
+    "dotenv": "16.1.4",
+    "express": "4.18.2",
+    "jsonwebtoken": "9.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.22.5",
+    "@babel/node": "7.22.5",
+    "@babel/preset-env": "7.22.5",
+    "babel-plugin-module-resolver": "5.0.0",
+    "nodemon": "2.0.22",
+    "prettier": "2.8.8"
+  }
+}
